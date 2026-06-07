@@ -1,1 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+    line-height:1.7;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    display:flex;
+    flex-direction:column;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero-content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero-content h1{
+    font-size:3.5rem;
+    max-width:900px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    max-width:800px;
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:white;
+    color:#1e3a8a;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* SECCIONES */
+
+.section{
+    padding:90px 10%;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.3rem;
+}
+
+.dark{
+    background:#0f172a;
+    color:white;
+}
+
+/* TARJETAS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    color:#1e293b;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#2563eb;
+}
+
+/* FORMULA */
+
+.formula{
+    text-align:center;
+    font-size:3rem;
+    margin:40px 0;
+    font-weight:bold;
+}
+
+/* MÉTRICAS */
+
+.metrics{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+.metric{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.metric span{
+    display:block;
+    font-size:2rem;
+    font-weight:bold;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+/* RESULTADOS */
+
+#grafica{
+    margin-top:40px;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+}
+
+/* CONCLUSIONES */
+
+.conclusiones{
+    max-width:900px;
+    margin:auto;
+}
+
+.conclusiones li{
+    margin-bottom:15px;
+    font-size:1.1rem;
+}
+
+/* FOOTER */
+
+footer{
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:2.3rem;
+    }
+
+    .formula{
+        font-size:2rem;
+    }
+}
