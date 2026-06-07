@@ -1,240 +1,320 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Predicción de Toxicidad Farmacológica mediante IA</title>
 
-    <link rel="stylesheet" href="style.css">
+```
+<link rel="stylesheet" href="style.css">
+```
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
 
-    <!-- HERO -->
+```
+<!-- HERO -->
 
-    <header class="hero">
+<header class="hero">
 
-        <nav>
-            <div class="logo">
-                Toxicidad IA
-            </div>
+    <nav>
 
-            <ul>
-                <li><a href="#problema">Problema</a></li>
-                <li><a href="#modelo">Modelo</a></li>
-                <li><a href="#resultados">Resultados</a></li>
-                <li><a href="#conclusiones">Conclusiones</a></li>
-            </ul>
-        </nav>
-
-        <div class="hero-content">
-
-            <h1>
-                Predicción de toxicidad farmacológica mediante IA
-            </h1>
-
-            <p>
-                Aplicación de sistemas sobredimensionados y ajuste por mínimos cuadrados
-                para apoyar el cribado computacional de fármacos.
-            </p>
-
-            <a href="#problema" class="btn">
-                Explorar proyecto
-            </a>
-
+        <div class="logo">
+            Toxicidad IA
         </div>
 
-    </header>
-
-    <!-- PROBLEMA -->
-
-    <section id="problema" class="section">
-
-        <h2>¿Por qué es importante este problema?</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Toxicidad</h3>
-                <p>
-                    Muchos compuestos prometedores son descartados por efectos
-                    adversos detectados en fases avanzadas del desarrollo.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Coste</h3>
-                <p>
-                    Los ensayos farmacológicos requieren tiempo, recursos y una
-                    elevada inversión económica.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Inteligencia Artificial</h3>
-                <p>
-                    Los modelos predictivos permiten identificar riesgos de forma
-                    temprana utilizando datos previos.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- MODELO -->
-
-    <section id="modelo" class="section dark">
-
-        <h2>Modelo matemático</h2>
-
-        <p>
-            El problema puede representarse mediante un sistema sobredimensionado
-            en el que existen más observaciones que incógnitas.
-        </p>
-
-        <div class="formula">
-            Ax ≈ b
-        </div>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>A</h3>
-                <p>Propiedades moleculares observadas.</p>
-            </div>
-
-            <div class="card">
-                <h3>x</h3>
-                <p>Parámetros desconocidos del modelo.</p>
-            </div>
-
-            <div class="card">
-                <h3>b</h3>
-                <p>Nivel de toxicidad observado.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- MÉTRICAS -->
-
-    <section class="section">
-
-        <h2>Datos del estudio</h2>
-
-        <div class="metrics">
-
-            <div class="metric">
-                <span>5</span>
-                <p>Compuestos analizados</p>
-            </div>
-
-            <div class="metric">
-                <span>3</span>
-                <p>Variables estudiadas</p>
-            </div>
-
-            <div class="metric">
-                <span>0,9939</span>
-                <p>Valor R²</p>
-            </div>
-
-            <div class="metric">
-                <span>Mínimos cuadrados</span>
-                <p>Método utilizado</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- RESULTADOS -->
-
-    <section id="resultados" class="section dark">
-
-        <h2>Resultados obtenidos</h2>
-
-        <p>
-            La relación entre la lipofilia y la toxicidad muestra una tendencia
-            creciente. El ajuste polinómico obtenido presenta un valor
-            R² = 0,9939, lo que indica una capacidad descriptiva muy elevada
-            para el conjunto de datos analizado.
-        </p>
-
-        <canvas id="grafica"></canvas>
-
-    </section>
-
-    <!-- LIMITACIONES -->
-
-    <section class="section">
-
-        <h2>Limitaciones del modelo</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Datos simulados</h3>
-                <p>
-                    El estudio utiliza un conjunto reducido de datos para fines
-                    académicos.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Sobreajuste</h3>
-                <p>
-                    Un modelo demasiado complejo podría perder capacidad
-                    predictiva.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Validación experimental</h3>
-                <p>
-                    Los resultados deben confirmarse mediante ensayos reales.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- CONCLUSIONES -->
-
-    <section id="conclusiones" class="section dark">
-
-        <h2>Conclusiones</h2>
-
-        <ul class="conclusiones">
-
-            <li>La inteligencia artificial puede ayudar a reducir costes de investigación.</li>
-
-            <li>Los sistemas sobredimensionados permiten modelar problemas reales.</li>
-
-            <li>La lipofilia presenta una relación positiva con la toxicidad.</li>
-
-            <li>Los modelos predictivos deben complementarse con validación experimental.</li>
-
+        <ul>
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#modelo">Modelo</a></li>
+            <li><a href="#metodologia">Metodología</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+            <li><a href="#conclusiones">Conclusiones</a></li>
         </ul>
 
-    </section>
+    </nav>
 
-    <!-- FOOTER -->
+    <div class="hero-content">
 
-    <footer>
+        <h1>
+            Predicción de toxicidad farmacológica mediante IA
+        </h1>
 
         <p>
-            Anna · Álgebra Lineal y Multilineal · UNIR · Curso 2025-2026
+            Aplicación de sistemas sobredimensionados y ajuste por mínimos cuadrados
+            para apoyar el cribado computacional de fármacos.
         </p>
 
-    </footer>
+        <a href="#problema" class="btn">
+            Explorar proyecto
+        </a>
 
-    <script src="script.js"></script>
+    </div>
+
+</header>
+
+<!-- PROBLEMA -->
+
+<section id="problema" class="section">
+
+    <h2>¿Por qué es importante este problema?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Toxicidad</h3>
+            <p>
+                Muchos compuestos prometedores son descartados debido a efectos adversos
+                detectados durante las fases de desarrollo farmacológico.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Coste</h3>
+            <p>
+                Los ensayos experimentales requieren una elevada inversión de tiempo,
+                recursos humanos y financiación.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Inteligencia Artificial</h3>
+            <p>
+                Los modelos predictivos permiten identificar riesgos potenciales antes
+                de iniciar estudios más complejos y costosos.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MODELO -->
+
+<section id="modelo" class="section dark">
+
+    <h2>Modelo matemático</h2>
+
+    <p>
+        El problema puede representarse mediante un sistema sobredimensionado,
+        donde existen más observaciones disponibles que parámetros desconocidos.
+    </p>
+
+    <div class="formula">
+        Ax ≈ b
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Matriz A</h3>
+            <p>
+                Contiene las propiedades moleculares observadas para cada compuesto.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Vector x</h3>
+            <p>
+                Representa los parámetros desconocidos que deben estimarse.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Vector b</h3>
+            <p>
+                Contiene los niveles de toxicidad observados.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- METODOLOGÍA -->
+
+<section id="metodologia" class="section">
+
+    <h2>Metodología</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>1. Recopilación de datos</h3>
+            <p>
+                Se utilizaron propiedades moleculares y niveles de toxicidad simulados.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. Construcción del modelo</h3>
+            <p>
+                Los datos se organizaron en forma matricial para generar un sistema
+                sobredimensionado.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. Mínimos cuadrados</h3>
+            <p>
+                Se aplicó el método de mínimos cuadrados para estimar los parámetros
+                del modelo.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>4. Ajuste e interpretación</h3>
+            <p>
+                Los resultados se representaron gráficamente y se analizó la calidad
+                del ajuste obtenido.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DATOS -->
+
+<section class="section dark">
+
+    <h2>Datos del estudio</h2>
+
+    <div class="metrics">
+
+        <div class="metric">
+            <span>5</span>
+            <p>Compuestos analizados</p>
+        </div>
+
+        <div class="metric">
+            <span>3</span>
+            <p>Variables estudiadas</p>
+        </div>
+
+        <div class="metric">
+            <span>0,9939</span>
+            <p>Coeficiente R²</p>
+        </div>
+
+        <div class="metric">
+            <span>Mínimos cuadrados</span>
+            <p>Método utilizado</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RESULTADOS -->
+
+<section id="resultados" class="section">
+
+    <h2>Resultados obtenidos</h2>
+
+    <p>
+        El ajuste polinómico realizado presenta un coeficiente de determinación
+        R² = 0,9939. Esto indica que aproximadamente el 99,39 % de la variabilidad
+        observada puede explicarse mediante el modelo ajustado.
+    </p>
+
+    <img src="grafica.png"
+         alt="Relación entre lipofilia y toxicidad"
+         class="grafica-real">
+
+    <p>
+        <strong>Figura 1.</strong>
+        Relación entre la lipofilia y la toxicidad mediante una regresión
+        polinómica de segundo grado.
+    </p>
+
+</section>
+
+<!-- LIMITACIONES -->
+
+<section class="section dark">
+
+    <h2>Limitaciones del modelo</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Datos simulados</h3>
+            <p>
+                El conjunto de datos utilizado tiene fines académicos.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Sobreajuste</h3>
+            <p>
+                Un exceso de complejidad puede reducir la capacidad predictiva.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Validación experimental</h3>
+            <p>
+                Los resultados deben contrastarse mediante estudios reales.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONCLUSIONES -->
+
+<section id="conclusiones" class="section">
+
+    <h2>Conclusiones</h2>
+
+    <ul class="conclusiones">
+
+        <li>La inteligencia artificial puede acelerar el descubrimiento de fármacos.</li>
+
+        <li>Los sistemas sobredimensionados permiten modelar problemas reales.</li>
+
+        <li>La lipofilia presenta una relación positiva con la toxicidad observada.</li>
+
+        <li>Los modelos predictivos deben complementarse con validación experimental.</li>
+
+    </ul>
+
+</section>
+
+<!-- REFERENCIAS -->
+
+<section class="section dark">
+
+    <h2>Referencias principales</h2>
+
+    <div class="card">
+
+        <p>Bishop, C. M. (2006). Pattern Recognition and Machine Learning.</p>
+
+        <p>Hastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning.</p>
+
+        <p>Zhavoronkov, A., Vanhaelen, Q., & Oprea, T. I. (2020). Clinical Pharmacology & Therapeutics.</p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        Proyecto académico desarrollado para la asignatura de Álgebra Lineal y Multilineal.
+        <br>
+        UNIR · Curso 2025-2026
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+```
 
 </body>
 </html>
